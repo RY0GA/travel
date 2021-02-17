@@ -20,7 +20,7 @@ while true
   #プラン番号を入力する処理
   select_plan_number = gets.to_i
   break if (1..3).include?(select_plan_number)
-    puts "1~3を入力してください"
+  puts "1~3を入力してください"
 end
 
 #選択されたプラン名を表示する処理
