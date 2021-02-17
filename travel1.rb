@@ -42,13 +42,11 @@ puts "#{num_of_people}名ですね。"
 
 #合計金額を計算する処理
 total_price = chosen_plan[:price] * num_of_people
-#割引料金を計算する処理
-discount_total_price = (total_price * 0.9).floor
 
 #割引料金が適応されるか判断する処理
 if num_of_people >= 5
   puts "#{num_of_people}名以上ですので10％％割引になります"
-  puts "合計金額は#{discount_total_price}円になります。"
-else
-  puts "合計金額は#{total_price}円になります。"
+  #割引料金を計算する処理
+  total_price = (total_price * 0.9).floor
 end
+puts "合計金額は#{total_price}円になります。"
